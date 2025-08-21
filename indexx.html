@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAIS NOSEP MLBB</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1a001f;
+      color: #fff;
+    }
+    header {
+      padding: 20px;
+      background: #330033;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+    .verified {
+      width: 22px;
+      height: 22px;
+    }
+    .cart {
+      font-size: 22px;
+    }
+    marquee {
+      color: #ffcc00;
+      font-size: 15px;
+      margin-top: 5px;
+    }
+    .produk-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .produk {
+      background: #2a002e;
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: 0 0 12px #000;
+      position: relative;
+      transition: transform 0.2s ease;
+    }
+    .produk:hover {
+      transform: scale(1.03);
+    }
+    .produk img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .nomor {
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      background: red;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 50%;
+      padding: 6px 12px;
+      box-shadow: 0 0 6px #000;
+    }
+    .info {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .info h3 {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .btn {
+      background: #ff0066;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #ff3399;
+    }
+    .form-order {
+      margin: 30px auto;
+      width: 90%;
+      max-width: 400px;
+      background: #330033;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #000;
+      text-align: center;
+    }
+    .form-order h2 {
+      margin-bottom: 15px;
+    }
+    .form-order input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: none;
+    }
+    .form-order button {
+      background: #00cc66;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .form-order button:hover {
+      background: #00e68a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <span class="cart">🛒</span> 
+      FAIS NOSEP MLBB 
+      <!-- Centang Biru Mirip IG -->
+      <svg class="verified" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="#1DA1F2"/>
+        <path d="M17 8l-6.5 8L7 13" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </h1>
+    <marquee>🙏🏻SELAMAT DATANG DI WEB FAIS SILAHKAN BELANJA🙏🏻</marquee>
+  </header>
+
+  <div class="produk-container">
+    <div class="produk">
+      <div class="nomor">1</div>
+      <a href="https://ibb.co.com/HDKqtGHV"><img src="https://i.ibb.co.com/jv8Dy3rT/20250821-215146.jpg" alt="20250821-215146" border="0"></a>
+      <div class="info"><h3>Produk 1</h3></div>
+      <button class="btn" onclick="pilihProduk('Produk 1')">Beli</button>
+    </div>
+
+    <div class="produk">
+      <div class="nomor">2</div>
+      <a href="https://ibb.co.com/LXWNwB5w"><img src="https://i.ibb.co.com/C3ZPd42d/20250821-215509.jpg" alt="20250821-215509" border="0"></a>
+      <div class="info"><h3>Produk 2</h3></div>
+      <button class="btn" onclick="pilihProduk('Produk 2')">Beli</button>
+    </div>
+
+    <div class="produk">
+      <div class="nomor">3</div>
+      <a href="https://ibb.co.com/S7n1MLdq"><img src="https://i.ibb.co.com/vvPrTtQ2/20250821-215907.jpg" alt="20250821-215907" border="0"></a>
+      <div class="info"><h3>Produk 3</h3></div>
+      <button class="btn" onclick="pilihProduk('Produk 3')">Beli</button>
+    </div>
+
+    <div class="produk">
+      <div class="nomor">4</div>
+      <a href="https://ibb.co.com/GfnhM1SH"><img src="https://i.ibb.co.com/SD5Lm1Cf/20250821-215715.jpg" alt="20250821-215715" border="0"></a>
+      <div class="info"><h3>Produk 4</h3></div>
+      <button class="btn" onclick="pilihProduk('Produk 4')">Beli</button>
+    </div>
+
+    <div class="produk">
+      <div class="nomor">5</div>
+      <a href="https://ibb.co.com/vvRs7CrN"><img src="https://i.ibb.co.com/x8dmpKcn/20250821-224459.jpg" alt="20250821-224459" border="0"></a><br /><a target='_blank' href='https://id.imgbb.com/'></a><br />
+      <div class="info"><h3>Produk 5</h3></div>
+      <button class="btn" onclick="pilihProduk('Produk 5')">Beli</button>
+    </div>
+
+    <div class="produk">
+      <div class="nomor">6</div>
+      <a href="https://ibb.co.com/VpvH8HZr"><img src="https://i.ibb.co.com/yB8hJh1G/20250821-224625.jpg" alt="20250821-224625" border="0"></a>
+      <div class="info"><h3>Produk 6</h3></div>
+      <button class="btn" onclick="pilihProduk('Produk 6')">Beli</button>
+    </div>
+
+    <div class="produk">
+      <div class="nomor">7</div>
+      <a href="https://ibb.co.com/Q3d7m95b"><img src="https://i.ibb.co.com/39z5h1Jr/20250821-224736.jpg" alt="20250821-224736" border="0"></a>
+      <div class="info"><h3>Produk 7</h3></div>
+      <button class="btn" onclick="pilihProduk('Produk 7')">Beli</button>
+    </div>
+  </div>
+
+  <div class="form-order">
+    <h2>Formulir Pemesanan</h2>
+    <form id="orderForm">
+      <input type="text" id="produk" name="produk" placeholder="Produk" readonly required>
+      <input type="text" id="nama" name="nama" placeholder="Nama Pembeli" required>
+      <input type="tel" id="nomor" name="nomor" placeholder="Nomor HP" required>
+      <button type="submit">Kirim Pesanan via WhatsApp</button>
+    </form>
+  </div>
+
+  <script>
+    function pilihProduk(namaProduk) {
+      document.getElementById('produk').value = namaProduk;
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const produk = document.getElementById('produk').value;
+      const nama = document.getElementById('nama').value;
+      const nomor = document.getElementById('nomor').value;
+      const pesan = `Halo, saya mau pesan:\nProduk: ${produk}\nNama: ${nama}\nNomor HP: ${nomor}`;
+      const url = `https://wa.me/6281234567890?text=${encodeURIComponent(pesan)}`;
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+</html>
